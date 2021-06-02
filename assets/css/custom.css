@@ -1,8 +1,6 @@
 body h1 {
-  color: yellow !important;
+  color: red !important;
 }
 body p {
   color: red;
 }
-
-/*# sourceMappingURL=custom.css.map */
