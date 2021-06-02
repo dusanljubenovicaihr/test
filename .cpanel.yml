@@ -1,0 +1,10 @@
+---
+deployment:
+tasks:
+- export ROOT=/home/maahadonline/
+- /bin/ls -A -I ".git" -I "public" | /bin/xargs -I % /bin/cp -ru % $ROOT
+# print without copy : - /bin/ls -A -I ".git" -I "public" | /bin/xargs -t -I % /bin/cp -ru % $ROOT
+
+- export PUBLIC=/home/maahadonline/public_html/
+- /bin/ls -A -I ".htaccess" public | /bin/xargs -I % /bin/cp -ru public/% $PUBLIC
+# print without copy : - /bin/ls -A -I ".htaccess" public | /bin/xargs -t -I % /bin/cp -ru public/% $PUBLIC
