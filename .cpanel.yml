@@ -1,10 +1,11 @@
 ---
 deployment:
 tasks:
-- export ROOT=/home/maahadonline/
+- export ROOT=/home3/dusanlju/
 - /bin/ls -A -I ".git" -I "public" | /bin/xargs -I % /bin/cp -ru % $ROOT
 # print without copy : - /bin/ls -A -I ".git" -I "public" | /bin/xargs -t -I % /bin/cp -ru % $ROOT
 
-- export PUBLIC=/home/maahadonline/public_html/
+- export PUBLIC= /home3/dusanlju/public_html/crtheme.com/demo4/wp-content/themes/test-test
 - /bin/ls -A -I ".htaccess" public | /bin/xargs -I % /bin/cp -ru public/% $PUBLIC
 # print without copy : - /bin/ls -A -I ".htaccess" public | /bin/xargs -t -I % /bin/cp -ru public/% $PUBLIC
+
